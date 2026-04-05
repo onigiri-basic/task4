@@ -27,6 +27,7 @@ function applyLanguage(lang) {
     document.getElementById('genderMaleL').textContent = data.genderMaleL;
     document.getElementById('genderFemaleL').textContent = data.genderFemaleL;
     document.getElementById('genderunknownL').textContent = data.genderunknownL;
+    document.getElementById('phoneHelpL').textContent = data.phoneHelpL;
     
     // Меняем атрибут lang у html
     document.documentElement.lang = lang;
