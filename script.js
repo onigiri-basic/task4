@@ -1,4 +1,4 @@
-<meta charset="UTF-8">let translations = {}; // Хранит все переводы
+let translations = {}; // Хранит все переводы
 let currentLang = 'ru'; // Текущий язык
 
 // Загрузка JSON файла
@@ -20,12 +20,6 @@ function applyLanguage(lang) {
     
     // Обновляем текст на странице
     document.getElementById('fullnameL').textContent = data.fullnameL;
-    document.getElementById('greeting').textContent = data.greeting;
-    document.getElementById('description').textContent = data.description;
-    
-    // Меняем текст на кнопках (если нужно)
-    document.getElementById('btnRu').textContent = data.button_ru;
-    document.getElementById('btnEn').textContent = data.button_en;
     
     // Меняем атрибут lang у html
     document.documentElement.lang = lang;
