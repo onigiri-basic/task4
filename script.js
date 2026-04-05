@@ -1,48 +1,54 @@
-let translations = {}; // хранит все переводы
-let currentLang = 'ru'; // текущий язык
+<meta charset="UTF-8">let translations = {}; // Хранит все переводы
+let currentLang = 'ru'; // Текущий язык
 
-//загрузка JSON
-asinc function loadTlanslations() {
+// Загрузка JSON файла
+async function loadTranslations() {
     try {
-        const response = await fetsh('lang.json');
+        const response = await fetch('lang.json');
         translations = await response.json();
-        applyLanguage(currentLang); // Применить язык после закгрузки
+        applyLanguage(currentLang); // Применить язык после загрузки
     } catch (error) {
-        console.error('Ошибка загрузки json', error);
+        console.error('Ошибка загрузки JSON:', error);
     }
 }
 
-//применить выбраный язык на страницу
+// Применить выбранный язык на страницу
 function applyLanguage(lang) {
     if (!translations[lang]) return;
-
+    
     const data = translations[lang];
-    // обновляем текст
-    document.getElementById('title').textContent = data.title;
-
-    // смена текста кнопок
-    document.getElementById('btnRu').textContent = data.button_ru
-
-    //меняем lang у html
+    
+    // Обновляем текст на странице
+    document.getElementById('fullnameL').textContent = data.fullnameL;
+    document.getElementById('greeting').textContent = data.greeting;
+    document.getElementById('description').textContent = data.description;
+    
+    // Меняем текст на кнопках (если нужно)
+    document.getElementById('btnRu').textContent = data.button_ru;
+    document.getElementById('btnEn').textContent = data.button_en;
+    
+    // Меняем атрибут lang у html
     document.documentElement.lang = lang;
-
-    //сохранить выбраный язык
+    
+    // Сохраняем выбранный язык
     currentLang = lang;
-    localStorage.setItem('language', lang); // запоминаем выбор пользователя
+    localStorage.setItem('language', lang); // Запоминаем выбор пользователя
 }
 
-//обработка кнопок
+// Обработчики кнопок
 document.getElementById('btnRu').addEventListener('click', () => {
     applyLanguage('ru');
 });
+
 document.getElementById('btnEn').addEventListener('click', () => {
     applyLanguage('en');
 });
 
-//загружаем сохраненнный язык
+// Загружаем сохранённый язык (если есть)
 const savedLang = localStorage.getItem('language');
-if (savedLang && (savedLang === 'ru' || savedLang === 'en')){
+if (savedLang && (savedLang === 'ru' || savedLang === 'en')) {
     currentLang = savedLang;
 }
-//запуск / загрузка json
-loadTlanslations();
+
+// Запуск: загружаем JSON
+loadTranslations();
