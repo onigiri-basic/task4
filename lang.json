@@ -1,18 +1,8 @@
 {
   "ru": {
-    "title": "Добро пожаловать",
-    "greeting": "Привет, пользователь!",
-    "description": "Это сайт с переключением языка",
-    "button_ru": "Русский",
-    "button_en": "Английский",
-    "fullnameL": "ФИО"
+    "fullnameL": "Добро пожаловать"
   },
   "en": {
-    "title": "Welcome",
-    "greeting": "Hello, user!",
-    "description": "This is a website with language switching",
-    "button_ru": "Russian",
-    "button_en": "English",
-    "fullnameL": "Name"
+    "fullnameL": "Welcome"
   }
 }
