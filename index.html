@@ -6,34 +6,34 @@
     <title>Анкета|Форма</title>
 </head>
 <body>
-    <h1 id="fullnameL"></h1>
     <button id="btnRu">Русский</button>
     <button id="btnEn">English</button>
+    <h1 id="titleL"></h1>
 
     <!-- ФИО -->
     <form id="developerForm" action="#" method="post">
-        <label for="fullname"><span style="color:#e53e3e;">*</span></label>
+        <label for="fullname" id="fullnameL"><span style="color:#e53e3e;">*</span></label>
         <input type="text" id="fullname" name="fullname" placeholder="Баранов Андрей Александрович" required>
 
     <!-- ТЕЛЕФОН -->>
-        <label for="phone">Телефон</label>
+        <label for="phone" id="phoneL"></label>
         <input type="tel" name="phone" placeholder="+7 999 123 45 67" pattern="[\+0-9\s\-\(\)]+">
-        <div>Формат любой, рекомендуется +7 или 8</div>
+        <div id="phoneHelpL"></div>
 
     <!-- email -->
-        <label for="email">E-mail <span style="color:#e53e3e;">*</span>
+        <label for="email" id="emailL"><span style="color:#e53e3e;">*</span>
         </label>
         <input type="email" id="email" name="email" placeholder="baranow@xemple.com" required>
 
     <!-- ДАТА РОЖДЕНИЯ -->
-        <label for="birthdate">Дата рождения</label>
+        <label for="birthdate" id="birthdateL"></label>
         <input type="date" id="birthdate" name="birthdate">
 
     <!-- ПОЛ -->
-        <label for="gender">Пол</label>
-        <input type="radio" name="gender" value="male"> Мужской
-        <input type="radio" name="gender" value="female"> Женский
-        <input type="radio" name="gender" value="unknown" checked> Не указан
+        <label for="gender" id="genderL"></label>
+        <input type="radio" name="gender" value="male" id="genderMaleL"> 
+        <input type="radio" name="gender" value="female" id="genderFealeL">
+        <input type="radio" name="gender" value="unknown" id="gendernknownL"checked>
     <!-- ЛЮБИМЫЙ ЯП -->
         <label for="lang"></label>
     </form>
