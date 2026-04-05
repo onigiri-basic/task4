@@ -7,7 +7,8 @@
     "birthdateL": "Дата рождения",
     "genderMaleL": "Мужской",
     "genderFemaleL": "Женский",
-    "genderunknownL": "Не указан"
+    "genderunknownL": "Не указан",
+    "phoneHelpL": "+7 или 8"
   },
   "en": {
     "titleL": "Please fill out the form",
@@ -17,6 +18,7 @@
     "birthdateL": "birthdate",
     "genderMaleL": "Male",
     "genderFemaleL": "Female",
-    "genderunknownL": "Unknown"
+    "genderunknownL": "Unknown",
+    "phoneHelpL": "+7 or 8"
   }
 }
