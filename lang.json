@@ -1,8 +1,22 @@
 {
   "ru": {
-    "fullnameL": "Добро пожаловать"
+    "titleL": "Заполните пожалуйста форму",
+    "fullnameL": "ФИО",
+    "phoneL": "Телефон",
+    "emailL": "Почта",
+    "birthdateL": "Дата рождения",
+    "genderMaleL": "Мужской",
+    "genderFemaleL": "Женский",
+    "genderunknownL": "Не указан",
   },
   "en": {
-    "fullnameL": "Welcome"
+    "titleL": "Please fill out the form",
+    "fullnameL": "Fullname",
+    "phoneL": "Phone",
+    "emailL": "E-mail",
+    "birthdateL": "birthdate",
+    "genderMaleL": "Male",
+    "genderFemaleL": "Female",
+    "genderunknownL": "Unknown",
   }
 }
