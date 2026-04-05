@@ -6,17 +6,13 @@
     <title>Анкета|Форма</title>
 </head>
 <body>
-    <h1> Регистрационная Анкета </h1>
+    <h1 id="fullnameL"></h1>
     <button id="btnRu">Русский</button>
     <button id="btnEn">English</button>
-    <h1 id="title"></h1>
-    <p id="greeting"></p>
-    <p id="description"></p>
 
-    <script src="script.js"></script>
     <!-- ФИО -->
     <form id="developerForm" action="#" method="post">
-        <label for="fullname" id="fullnameL"><span style="color:#e53e3e;">*</span></label>
+        <label for="fullname"><span style="color:#e53e3e;">*</span></label>
         <input type="text" id="fullname" name="fullname" placeholder="Баранов Андрей Александрович" required>
 
     <!-- ТЕЛЕФОН -->>
@@ -41,5 +37,6 @@
     <!-- ЛЮБИМЫЙ ЯП -->
         <label for="lang"></label>
     </form>
+    <script src="script.js"></script>
 </body>
 </html>
