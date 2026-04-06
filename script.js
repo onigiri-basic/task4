@@ -20,24 +20,16 @@ function applyLanguage(lang) {
     
     // Обновляем текст на странице
     // Перебираем все ключи
-    Object.keys(data).forEach(key => {
-        const element = document.getElementById(key);
-        
-        // Обновляем только если элемент существует и значение - строка
-        if (element && typeof data[key] === 'string') {
-            element.textContent = data[key];
-        }
-    });
-    // document.getElementById('titleL').textContent = data.titleL;
-    // document.getElementById('fullnameL').textContent = data.fullnameL;
-    // document.getElementById('phoneL').textContent = data.phoneL;
-    // document.getElementById('emailL').textContent = data.emailL;
-    // document.getElementById('birthdateL').textContent = data.birthdateL;
-    // document.getElementById('genderMaleL').textContent = data.genderMaleL;
-    // document.getElementById('genderFemaleL').textContent = data.genderFemaleL;
-    // document.getElementById('genderunknownL').textContent = data.genderunknownL;
-    // document.getElementById('phoneHelpL').textContent = data.phoneHelpL;
-    // document.getElementById('bio').textContent = data
+    document.getElementById('titleL').textContent = data.titleL;
+    document.getElementById('fullnameL').textContent = data.fullnameL;
+    document.getElementById('phoneL').textContent = data.phoneL;
+    document.getElementById('emailL').textContent = data.emailL;
+    document.getElementById('birthdateL').textContent = data.birthdateL;
+    document.getElementById('genderMaleL').textContent = data.genderMaleL;
+    document.getElementById('genderFemaleL').textContent = data.genderFemaleL;
+    document.getElementById('genderunknownL').textContent = data.genderunknownL;
+    document.getElementById('phoneHelpL').textContent = data.phoneHelpL;
+    document.getElementById('bio').textContent = data
 
 
     // Меняем атрибут lang у html
