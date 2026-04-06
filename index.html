@@ -34,9 +34,40 @@
         <input type="radio" name="gender" value="male"><span id="genderMaleL">Мужской</span>
         <input type="radio" name="gender" value="female"><span id="genderFemaleL">Женский</span>
         <input type="radio" name="gender" value="unknown" checked><span id="genderunknownL">Не указан</span>
+
     <!-- ЛЮБИМЫЙ ЯП -->
-        <label for="lang"></label>
+        <label for="lang" id=langL></label>
+        <select name="fav_langs" id="fav_langs" multiple size="6">
+            <option value="Pascal">Pascal</option>
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="PHP">PHP</option>
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="Haskel">Haskel</option>
+                <option value="Clojure">Clojure</option>
+                <option value="Prolog">Prolog</option>
+                <option value="Scala">Scala</option>
+                <option value="Go">Go</option>
+            <div id="langHelpL"></div>
+        </select>
+
+    <!-- БИО-->
+        <label id="bioL"></label>
+        <textarea id="bio" name="bio" placeholder="Расскажите о себе, опыте разработки, увлечениях и достижениях..."></textarea>
+
+    <!-- Чекбокс -->
+        <label id="checkL"></label>
+        <input type="checkbox" name="contract_agreed" id="contractCheck" value="yes">
+        <label id="contractL"></label>
+
+    <!-- кнопка сохранить -->
+    <button type="button" id=saveButton></button>
     </form>
     <script src="script.js"></script>
+
+<!-- всплывающее уведамление -->
+
 </body>
 </html>
