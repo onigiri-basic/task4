@@ -8,17 +8,33 @@
     "genderMaleL": "Мужской",
     "genderFemaleL": "Женский",
     "genderunknownL": "Не указан",
-    "phoneHelpL": "+7 или 8"
+    "phoneHelpL": "+7 или 8",
+    "langL": "Любимые языки программирования",
+    "langHelpL": "Удерживайте Ctrl (Cmd) для выбора нескольких языков",
+    "bioL": "Биография",
+    "bio_placeholder": "Расскажите о себе, опыте разработки, увлечениях и достижениях..",
+    "checkL": "Согласие",
+    "contractL": "ознакомлен(а) с условиями пользовательского соглашения и политикой обработки данных",
+    "saveButton": "Сохранить"
+
   },
   "en": {
     "titleL": "Please fill out the form",
     "fullnameL": "Fullname",
     "phoneL": "Phone",
     "emailL": "E-mail",
-    "birthdateL": "birthdate",
+    "birthdateL": "Birthdate",
     "genderMaleL": "Male",
     "genderFemaleL": "Female",
     "genderunknownL": "Unknown",
-    "phoneHelpL": "+7 or 8"
+    "phoneHelpL": "+7 or 8",
+    "langL": "Favorite proramming languages",
+    "langHelpL": "Hold Ctrl (Cmd) for miltiple selections",
+    "bioL": "About",
+    "bio_placeholder": "Tell us about yourself, your development experience, hobbies, and achievements...",
+    "checkL": "Consent",
+    "contractL": "I have read the terms of the user agreement and the data processing policy",
+    "saveButton": "Save"
   }
 }
+//langL langHelpL bioL "bio_placeholder" checkL contractL saveButton
