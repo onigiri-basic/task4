@@ -19,17 +19,13 @@ function applyLanguage(lang) {
     const data = translations[lang];
     
     // Обновляем текст на странице
-    document.getElementById('titleL').textContent = data.titleL;
-    document.getElementById('fullnameL').textContent = data.fullnameL;
-    document.getElementById('phoneL').textContent = data.phoneL;
-    document.getElementById('emailL').textContent = data.emailL;
-    document.getElementById('birthdateL').textContent = data.birthdateL;
-    document.getElementById('genderMaleL').textContent = data.genderMaleL;
-    document.getElementById('genderFemaleL').textContent = data.genderFemaleL;
-    document.getElementById('genderunknownL').textContent = data.genderunknownL;
-    document.getElementById('phoneHelpL').textContent = data.phoneHelpL;
-    document.getElementById('bio').textContent = data;
-
+    // Цикл по всем ключам в data
+    for (const key in data) {
+        const element = document.getElementById(key);
+        if (element) {
+            element.textContent = data[key];
+        }
+    }
 
     // Меняем атрибут lang у html
     document.documentElement.lang = lang;
