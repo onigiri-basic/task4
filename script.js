@@ -19,7 +19,6 @@ function applyLanguage(lang) {
     const data = translations[lang];
     
     // Обновляем текст на странице
-    // Перебираем все ключи
     document.getElementById('titleL').textContent = data.titleL;
     document.getElementById('fullnameL').textContent = data.fullnameL;
     document.getElementById('phoneL').textContent = data.phoneL;
