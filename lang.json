@@ -12,6 +12,7 @@
     "langL": "Любимые языки программирования",
     "langHelpL": "Удерживайте Ctrl (Cmd) для выбора нескольких языков",
     "bioL": "Биография",
+    "bio": "Расскажите о себе, опыте разработки, увлечениях и достижениях..",
     "checkL": "Согласие",
     "contractL": "ознакомлен(а) с условиями пользовательского соглашения и политикой обработки данных",
     "saveButton": "Сохранить"
@@ -30,6 +31,7 @@
     "langL": "Favorite proramming languages",
     "langHelpL": "Hold Ctrl (Cmd) for miltiple selections",
     "bioL": "About",
+    "bio": "Tell us about yourself, your development experience, hobbies, and achievements...",
     "checkL": "Consent",
     "contractL": "I have read the terms of the user agreement and the data processing policy",
     "saveButton": "Save"
