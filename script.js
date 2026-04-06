@@ -19,13 +19,11 @@ function applyLanguage(lang) {
     const data = translations[lang];
     
     // Обновляем текст на странице
-    Object.keys(translations).forEach(key =>
-    {
-        const element = document.getElementById(key);
-        if(element) {
-            element.textContent = translations[key];
-        }
-    })
+    for (const [key, value] of Object.entries(data)) {
+    const element = document.getElementById(key);
+    if (element) {
+      element.textContent = value;
+    }
     // document.getElementById('titleL').textContent = data.titleL;
     // document.getElementById('fullnameL').textContent = data.fullnameL;
     // document.getElementById('phoneL').textContent = data.phoneL;
