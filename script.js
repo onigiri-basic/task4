@@ -29,7 +29,7 @@ function applyLanguage(lang) {
     document.getElementById('genderFemaleL').textContent = data.genderFemaleL;
     document.getElementById('genderunknownL').textContent = data.genderunknownL;
     document.getElementById('phoneHelpL').textContent = data.phoneHelpL;
-    document.getElementById('bio').textContent = data
+    document.getElementById('bio').textContent = data;
 
 
     // Меняем атрибут lang у html
