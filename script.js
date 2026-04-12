@@ -23,7 +23,6 @@ function applyLanguage(lang) {
     for (const key in data) {
         const element = document.getElementById(key);
         if (element) {
-            element.placeholder = data[key];
         }
     }
 
