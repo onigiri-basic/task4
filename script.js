@@ -25,13 +25,9 @@ function applyLanguage(lang) {
         if (element) {
             element.textContent = data[key];
         }
+        element = document.querySelector(`[data-field="${key}"]`);
+            if (element) element.placeholder = value;
     }
-    document.querySelectorAll('[data-placeholder-id]').forEach(element => {
-        const key = element.getAttribute('data-placeholder-id');
-        if (data[key]) {
-            element.placeholder = data[key];
-        }
-    });
 
     // Меняем атрибут lang у html
     document.documentElement.lang = lang;
