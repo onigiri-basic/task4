@@ -24,6 +24,7 @@ function applyLanguage(lang) {
         const element = document.getElementById(key);
         if (element) {
             element.textContent = data[key];
+            element.placeholder = data[key];
         }
     }
 
