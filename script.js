@@ -17,16 +17,15 @@ function applyLanguage(lang) {
     if (!translations[lang]) return;
     
     const data = translations[lang];
-    
+
     // Обновляем текст на странице
     // Цикл по всем ключам в data
     for (const key in data) {
         const element = document.getElementById(key);
         if (element) {
             element.textContent = data[key];
+            element.placeholder = data[key];
         }
-        element = document.querySelector(`[data-field="${key}"]`);
-            if (element) element.placeholder = value;
     }
 
     // Меняем атрибут lang у html
