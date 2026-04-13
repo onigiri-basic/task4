@@ -6,30 +6,34 @@
     <link rel="stylesheet" href="style.css">
     <title>Анкета|Форма</title>
 </head>
-<body>
+<header>
     <div class="lang-switch">
-    <button id="btnRu">Русский</button>
-    <button id="btnEn">English</button>
+    <button id="btnRu" class ="btn">Русский</button>
+    <button id="btnEn" class ="btn">English</button>
     </div>
-    <h1 id="titleL"></h1>
-
+</header>
+<body>
+    <div class="form">
+    <div class="title">
+    <h1 id="titleL">Заполните пожалуйста форму</h1>
+    </div>
     <!-- ФИО -->
     <form id="developerForm" action="#" method="post">
-        <label for="fullname" id="fullnameL"><span style="color:#e53e3e;">*</span></label>
+        <label for="fullname" id="fullnameL">ФИО<span style="color:#e53e3e;">*</span></label>
         <input type="text" id="fullname" name="fullname" placeholder="Баранов Андрей Александрович" required>
 
     <!-- ТЕЛЕФОН -->
-        <label for="phone" id="phoneL"></label>
+        <label for="phone" id="phoneL">Телефон</label>
         <input type="tel" name="phone" placeholder="+7 999 123 45 67" pattern="[\+0-9\s\-\(\)]+">
-        <div id="phoneHelpL"></div>
+        <div id="phoneHelpL">+7 или 8</div>
 
     <!-- email -->
-        <label for="email" id="emailL"><span style="color:#e53e3e;">*</span>
+        <label for="email" id="emailL">Почта<span style="color:#e53e3e;">*</span>
         </label>
         <input type="email" id="email" name="email" placeholder="baranow@xemple.com" required>
 
     <!-- ДАТА РОЖДЕНИЯ -->
-        <label for="birthdate" id="birthdateL"></label>
+        <label for="birthdate" id="birthdateL">Дата рождения</label>
         <input type="date" id="birthdate" name="birthdate">
 
     <!-- ПОЛ -->
@@ -39,7 +43,7 @@
         <input type="radio" name="gender" value="unknown" checked><span id="genderunknownL">Не указан</span>
 
     <!-- ЛЮБИМЫЙ ЯП -->
-        <label for="lang" id=langL></label>
+        <label for="lang" id=langL>Любимые языки программирования</label>
         <select name="fav_langs" id="fav_langs" multiple size="6">
             <option value="Pascal">Pascal</option>
                 <option value="C">C</option>
@@ -53,23 +57,23 @@
                 <option value="Prolog">Prolog</option>
                 <option value="Scala">Scala</option>
                 <option value="Go">Go</option>
-            <div id="langHelpL"></div>
+            <div id="langHelpL">Удерживайте Ctrl (Cmd) для выбора нескольких языков</div>
         </select>
 
     <!-- БИО-->
-        <label id="bioL"></label>
-        <textarea id="bio" name="bio" placeholder="..."></textarea>
+        <label id="bioL">Биография</label>
+        <textarea id="bio" name="bio" placeholder="Расскажите о себе, опыте разработки, увлечениях и достижениях.."></textarea>
 
     <!-- Чекбокс -->
-        <label id="checkL"></label>
+        <label id="checkL">Согласие</label>
         <input type="checkbox" name="contract_agreed" id="contractCheck" value="yes">
-        <label id="contractL"></label>
+        <label id="contractL">ознакомлен(а) с условиями пользовательского соглашения и политикой обработки данных</label>
 
     <!-- кнопка сохранить -->
-    <button type="button" id=saveButton></button>
+    <button type="button" id=saveButton>Сохранить</button>
     </form>
     <script src="script.js"></script>
-
+    </div>
 <!-- всплывающее уведамление -->
 
 </body>

@@ -1,6 +1,25 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+header{
+	background-color: gray;
+	display: inline-flex;
+	justify-items: right;
+	align-items: center;
+}
+.btn{
+	background-color: lightgrey;
+	width: 5rem;
+}
 body {
 	background-image: url('background.jpg');
-	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+}
+.form {
+	display: flex;
+    justify-content: center;
+     align-items: center;
 }
