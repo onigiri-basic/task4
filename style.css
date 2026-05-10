@@ -1,4 +1,5 @@
 *{
+	font-family: "Tiny5", sans-serif;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -14,12 +15,50 @@ header{
 	width: 5rem;
 }
 body {
+  	font-style: normal;
+	max-width:100%;
 	background-image: url('background.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 }
 .form {
 	display: flex;
-    justify-content: center;
-     align-items: center;
+	flex-direction:column;
+}
+.title{
+	background-color: gray;
+	margin: 1rem;
+	padding: 0.2rem;
+	border-style:solid;
+}
+.name, .phone, .email, .birthdate, .gender, .lang, .bio, .check, .save, .ratio{
+	background-color: grey;
+	display: inline-flex;
+	justify-items: right;
+	margin: 1rem;
+	padding: 0.2rem;
+	border-style:solid;
+}
+.phoneHelp{
+	font-size:0.75rem;
+}
+label{
+	background-color: lightgrey;
+	border-style:solid;
+}
+input, select, textarea{
+	background-color: light;
+}
+span{
+	background-color: white;
+	border-style:solid;
+}
+
+@media (min-width: 720px) {
+	.form {
+		display: flex;
+		flex-direction:column;
+	    justify-content: center;
+	    align-items: center;
+	}
 }

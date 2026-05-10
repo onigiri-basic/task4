@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Tiny5&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <link rel="stylesheet" href="style.css">
@@ -19,30 +22,37 @@
     </div>
     <!-- ФИО -->
     <form id="developerForm" action="#" method="post">
-        <label for="fullname" id="fullnameL">ФИО<span style="color:#e53e3e;">*</span></label>
-        <input type="text" id="fullname" name="fullname" placeholder="Баранов Андрей Александрович" required>
+        <div class="name">
+            <label for="fullname" id="fullnameL">ФИО<span style="color:#e53e3e;">*</span></label>
+            <input type="text" id="fullname" name="fullname" placeholder="Баранов Андрей Александрович" required>
+        </div>
 
     <!-- ТЕЛЕФОН -->
+    <div class="phone">
         <label for="phone" id="phoneL">Телефон</label>
         <input type="tel" name="phone" placeholder="+7 999 123 45 67" pattern="[\+0-9\s\-\(\)]+">
-        <div id="phoneHelpL">+7 или 8</div>
-
+        <div id="phoneHelpL" class='phoneHelp'>+7 или 8</div>
+    </div>
     <!-- email -->
+    <div class="email">
         <label for="email" id="emailL">Почта<span style="color:#e53e3e;">*</span>
         </label>
         <input type="email" id="email" name="email" placeholder="baranow@xemple.com" required>
-
+    </div>
     <!-- ДАТА РОЖДЕНИЯ -->
+    <div class=birthdate>
         <label for="birthdate" id="birthdateL">Дата рождения</label>
         <input type="date" id="birthdate" name="birthdate">
-
+    </div>
     <!-- ПОЛ -->
-        <label for="gender" id="genderL"></label>
-        <input type="radio" name="gender" value="male"><span id="genderMaleL">Мужской</span>
+    <div class="gender">
+        <label for="gender" id="genderL">Пол</label>
+        <input type="radio" name="gender" value="male" class="radio"><span id="genderMaleL">Мужской</span>
         <input type="radio" name="gender" value="female"><span id="genderFemaleL">Женский</span>
         <input type="radio" name="gender" value="unknown" checked><span id="genderunknownL">Не указан</span>
-
+    </div>
     <!-- ЛЮБИМЫЙ ЯП -->
+    <div class="lang">
         <label for="lang" id=langL>Любимые языки программирования</label>
         <select name="fav_langs" id="fav_langs" multiple size="6">
             <option value="Pascal">Pascal</option>
@@ -57,20 +67,27 @@
                 <option value="Prolog">Prolog</option>
                 <option value="Scala">Scala</option>
                 <option value="Go">Go</option>
-            <div id="langHelpL">Удерживайте Ctrl (Cmd) для выбора нескольких языков</div>
+            <div id="langHelpL" class="langHelp">Удерживайте Ctrl (Cmd) для выбора нескольких языков</div>
         </select>
-
+    </div>
     <!-- БИО-->
+    <div class="bio">
         <label id="bioL">Биография</label>
         <textarea id="bio" name="bio" placeholder="Расскажите о себе, опыте разработки, увлечениях и достижениях.."></textarea>
-
+    </div>
     <!-- Чекбокс -->
-        <label id="checkL">Согласие</label>
+    <div class="check">
+        <label id="checkL">Согласие
+        <span style="color:#e53e3e;">*</span>
+        </label>
         <input type="checkbox" name="contract_agreed" id="contractCheck" value="yes">
         <label id="contractL">ознакомлен(а) с условиями пользовательского соглашения и политикой обработки данных</label>
+    </div>
 
     <!-- кнопка сохранить -->
-    <button type="button" id=saveButton>Сохранить</button>
+    <div class="save">
+    <button type="button" id=saveButton class=btn>Сохранить</button>
+    </div>
     </form>
     <script src="script.js"></script>
     </div>
